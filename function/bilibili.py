@@ -207,7 +207,7 @@ class BiliBiliCheckIn(object):
         coin = data.get("coin", 0)
         msg = f"银瓜子数量: {silver}\n金瓜子数量: {gold}\n硬币数量: {coin}"
         return msg
-
+"""
     @staticmethod
     def silver2coin(session, bili_jct) -> dict:
         """银瓜子兑换硬币"""
@@ -215,7 +215,7 @@ class BiliBiliCheckIn(object):
         post_data = {"csrf_token": bili_jct}
         ret = session.post(url=url, data=post_data).json()
         return ret
-
+"""
     @staticmethod
     def get_region(session, rid=1, num=6) -> dict:
         """
